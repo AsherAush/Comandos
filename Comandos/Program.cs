@@ -11,17 +11,17 @@ namespace Comandos
         static void Main(string[] args)
         {
             Commando noam = new Commando("asher", "a125", Status.Standing);
-            Console.WriteLine(noam);
-            noam.Walk();
-            Console.WriteLine(noam);
-            noam.Hide();
-            Console.WriteLine(noam);
-            noam.Attack();
+            Seacommandor seaCommando = new Seacommandor("David", "d456", Status.Standing);
+            AirCommando airCommando = new AirCommando("Eli", "e789", Status.Standing);
+            
+            Commando[] Array1 = new Commando[] { noam, seaCommando, airCommando };
+            foreach (Commando commando in Array1)
+            {
+                commando.Attack();
+            }
 
             Weapon weapon = new Weapon("AK-47", "Kalashnikov", 30);
-            Console.WriteLine(weapon);
-            weapon.Shoot();
-            Console.WriteLine(weapon);
+            
 
 
         }
