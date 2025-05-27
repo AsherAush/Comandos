@@ -1,0 +1,51 @@
+﻿## Build results
+bin/
+obj/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio Code
+.vscode/
+
+## Visual Studio
+.vs/
+
+## Logs
+*.log
+
+## OS generated files
+.DS_Store
+Thumbs.db
+
+## NuGet
+*.nupkg
+packages/
+*.snupkg
+
+## Rider IDE
+.idea/
+
+## .NET secrets
+secrets.json
+
+## Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+## Test results
+TestResults/
+*.coverage
+*.coveragexml
+
+## Publish output
+publish/
+
+## Auto-generated files
+Generated_Code/
+
+## Global JSON
+global.json
