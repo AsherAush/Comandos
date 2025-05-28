@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace Comandos
 {
+    // מחלקה של נשקים
     internal class Weapon
     {
+        // שדות - שם, יצרן, מספר כדורים 
         public string Name { get; set; }
         public string Manufacturer { get; set; }
         public int NumOfBalls { get; set; }
 
+
+        // בנאי 
         public Weapon(string name, string manufacturer, int numOfBalls)
         {
             Name = name;
@@ -19,6 +23,7 @@ namespace Comandos
             NumOfBalls = numOfBalls;
         }
 
+        // מוציאה הודעת תקיפה
         public void Shoot()
         {
             if (NumOfBalls <= 0)
@@ -31,6 +36,8 @@ namespace Comandos
                 Console.WriteLine("Boom");
             }
         }
+
+        // מדפיסה את המופע
         public override string ToString()
         {
             return $"Weapon: {Name}, Manufacturer: {Manufacturer}, Balls left: {NumOfBalls}";

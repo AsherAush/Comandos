@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Comandos
 {
+
+    //   חיילים אוויריים עם הורשה של מחלקת חיילים 
     internal class AirCommando : Commando
 
     {
@@ -13,11 +15,15 @@ namespace Comandos
             : base(name, nameCode, status)
         {
         }
+
+        // מספר מה הוא עושה
         public void MyStoty()
         {
             Console.WriteLine("I am an air fighter.");
         }
 
+        // פונקציה מהאבא שמבצע שינוי גם אצל האבא
+        // מוציאה עדכון
         public override void Attack()
         {
             Console.WriteLine($"{NameCode} is attacking from the air!");

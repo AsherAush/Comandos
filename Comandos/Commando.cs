@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Comandos
 {
+
+    // מגדיר את סוגי הכלים
     enum Tools
 {
     Hammer,
@@ -14,6 +16,7 @@ namespace Comandos
     Bag,
     WaterBottle
 }
+    // מגדיר את סוגי הסטטוס
     enum Status
     {
         Standing,
@@ -22,44 +25,43 @@ namespace Comandos
     }
     internal class Commando
     {
-
+        // שדות - שם, שם קוד, ליסט כלים, סטטוס הולך/עומד/מתחבא, 
         private string Name ;
-        //public string GetName()
-        //{
-        //    return Nam e;
-        //}   
+        
         public string NameCode { get; set; }
+        // מאתחל את הכלים
         public List<Tools> Tolls { get; set; } = new List<Tools> 
         {Tools.Hammer, Tools.Chisel, Tools.Rope, Tools.Bag, Tools.WaterBottle};
     
         public Status StatusComando { get; set; } 
 
-
+        // בנאי 
         public  Commando(string name, string nameCode, Status status)
         {
             Name = name;
             NameCode = nameCode;
-            //Tolls = tolls;
             StatusComando = status;
 
         }
 
+        // משנה את הסטטוס להולך 
         public void Walk()
         {
             StatusComando = Status.Walking;
             Console.WriteLine($"{Name} is now walking.");
         }
-
+        // משנה את הסטטוס  למתחבא
         public void Hide()
         {
             StatusComando = Status.Hiding;
             Console.WriteLine($"{Name} is now hiding.");
         }
+        // מוציאה הודעה של תקיפה
         public virtual void Attack()
         {
             Console.WriteLine( $"{NameCode} is attacking!");
         }
-
+        // מגבילה את גילוי שם החייל
         public void SayName(string commanderRank)
         {
             if (commanderRank == "General")
@@ -75,7 +77,7 @@ namespace Comandos
                 Console.WriteLine("Unknown rank");
             }
         }
-
+        // מדפיסה את המופע
         public override string ToString()
         {
             string toolsList = string.Join(", ", Tolls);

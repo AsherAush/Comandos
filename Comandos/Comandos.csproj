@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="AirCommando.cs" />
     <Compile Include="Commando.cs" />
+    <Compile Include="Enemy.cs" />
+    <Compile Include="EnemyFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seacommandor.cs" />

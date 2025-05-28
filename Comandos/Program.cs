@@ -10,18 +10,21 @@ namespace Comandos
     {
         static void Main(string[] args)
         {
-            Commando noam = new Commando("asher", "a125", Status.Standing);
-            Seacommandor seaCommando = new Seacommandor("David", "d456", Status.Standing);
-            AirCommando airCommando = new AirCommando("Eli", "e789", Status.Standing);
+            //Commando noam = new Commando("asher", "a125", Status.Standing);
+            //Seacommandor seaCommando = new Seacommandor("David", "d456", Status.Standing);
+            //AirCommando airCommando = new AirCommando("Eli", "e789", Status.Standing);
             
-            Commando[] Array1 = new Commando[] { noam, seaCommando, airCommando };
-            foreach (Commando commando in Array1)
-            {
-                commando.Attack();
-            }
+            //Commando[] Array1 = new Commando[] { noam, seaCommando, airCommando };
+            //foreach (Commando commando in Array1)
+            //{
+            //    commando.Attack();
+            //}
 
-            Weapon weapon = new Weapon("AK-47", "Kalashnikov", 30);
-            
+            //Weapon weapon = new Weapon("AK-47", "Kalashnikov", 30);
+
+            EnemyFactory enemyFactory = new EnemyFactory();
+            enemyFactory.Enemfactory(int.Parse(Console.ReadLine()));
+            Console.WriteLine(enemyFactory.ToString());
 
 
         }
