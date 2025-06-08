@@ -10,8 +10,8 @@ namespace Comandos
     //  חיילים ימיים יורש את מחלקת חיילים
     internal class Seacommandor : Commando
     {
-        public Seacommandor(string name, string nameCode, Status status)
-            : base(name, nameCode, status)
+        public Seacommandor(string name, string nameCode)
+            : base(name, nameCode)
         {
 
         }

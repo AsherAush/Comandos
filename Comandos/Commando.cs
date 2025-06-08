@@ -36,11 +36,11 @@ namespace Comandos
         public Status StatusComando { get; set; } 
 
         // בנאי 
-        public  Commando(string name, string nameCode, Status status)
+        public  Commando(string name, string nameCode)
         {
             Name = name;
             NameCode = nameCode;
-            StatusComando = status;
+            StatusComando = Status.Standing;
 
         }
 

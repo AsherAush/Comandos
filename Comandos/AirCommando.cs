@@ -11,8 +11,8 @@ namespace Comandos
     internal class AirCommando : Commando
 
     {
-        public AirCommando(string name, string nameCode, Status status) 
-            : base(name, nameCode, status)
+        public AirCommando(string name, string nameCode) 
+            : base(name, nameCode)
         {
         }
 

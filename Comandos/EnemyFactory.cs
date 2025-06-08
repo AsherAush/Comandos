@@ -13,14 +13,10 @@ namespace Comandos
         public List<Enemy> Enemies { get; set; } = new List<Enemy>();
 
         // יצירת אויבים
-        public void Enemfactory(int sumEnemy)
+        public void Enemyfactory()
         {
-            for (int i = 0; i < sumEnemy; i++)
-            {
-                Enemy enemy = new Enemy();
-                Console.WriteLine(enemy.Name);
-                Enemies.Add(enemy);
-            }
+            Enemy enemy = new Enemy();
+            Enemies.Add(enemy);
         }
     }
 }

@@ -22,9 +22,10 @@ namespace Comandos
 
             //Weapon weapon = new Weapon("AK-47", "Kalashnikov", 30);
 
-            EnemyFactory enemyFactory = new EnemyFactory();
-            enemyFactory.Enemfactory(int.Parse(Console.ReadLine()));
-            Console.WriteLine(enemyFactory.ToString());
+            //EnemyFactory enemyFactory = new EnemyFactory();
+            //log log = new log();
+            //log.Log();
+
 
 
         }
